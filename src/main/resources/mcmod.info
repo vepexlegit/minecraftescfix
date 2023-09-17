@@ -2,10 +2,10 @@
 {
   "modid": "minecraftescfix",
   "name": "MinecraftESCFix",
-  "description": "Minecraft ESCAPE Fix | 1.8.9",
+  "description": "Minecraft ESCAPE Fix | 1.12.2",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://github.com/vepexlegit",
+  "url": "",
   "updateUrl": "",
   "authorList": ["vepexlegit"],
   "credits": "",

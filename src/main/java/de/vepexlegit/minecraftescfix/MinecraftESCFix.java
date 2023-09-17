@@ -1,14 +1,14 @@
 package de.vepexlegit.minecraftescfix;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.*;
 import net.minecraft.init.Blocks;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.lwjgl.input.Keyboard;
 
 @Mod(modid = MinecraftESCFix.MODID, version = MinecraftESCFix.VERSION)
@@ -25,11 +25,11 @@ public class MinecraftESCFix {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        System.out.println("DIRT BLOCK >> " + Blocks.dirt.getUnlocalizedName());
+        System.out.println("DIRT BLOCK >> "+Blocks.dirt.getUnlocalizedName());
     }
 
     @SubscribeEvent
-    public void onGuiOpen(GuiScreenEvent.KeyboardInputEvent.Pre event) {
+    public void onGuiOpen(GuiScreenEvent event) {
         if (event.gui instanceof GuiScreenServerList && Keyboard.getEventKeyState() && Keyboard.getEventKey() == Keyboard.KEY_ESCAPE) {
             mc.displayGuiScreen(new GuiMultiplayer(null));
         }

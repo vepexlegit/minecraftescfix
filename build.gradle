@@ -23,8 +23,9 @@ apply plugin: 'forge'
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
 
-version = project.version
-group = project.group
+version = "1.2"
+group = "de.vepexlegit.minecraftescfix"
+archivesBaseName = "MinecraftESCFix"
 
 minecraft {
     version = project.minecraft_version + "-" + project.forge_version

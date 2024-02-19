@@ -1,9 +1,9 @@
 [
 {
-  "modid": "minecraftescfix",
-  "name": "MinecraftESCFix",
-  "description": "Minecraft ESCAPE Fix | 1.8.9",
-  "version": "1.2",
+  "modid": "minecraftescfixdebug",
+  "name": "MinecraftESCFixDebug",
+  "description": "Minecraft ESC Fix Debug | 1.8.9 (DEBUG)\n/mcescfix on - enabled\n/mcescfix off - disabled",
+  "version": "1.0",
   "mcversion": "1.8.9",
   "url": "https://github.com/vepexlegit",
   "updateUrl": "",
